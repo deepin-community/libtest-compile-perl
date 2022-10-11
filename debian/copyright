@@ -1,0 +1,38 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Sagar R. Shah <srshah@cpan.org>
+Source: https://metacpan.org/release/Test-Compile
+Upstream-Name: Test-Compile
+
+Files: *
+Copyright:
+ 2007-2021, Marcel Grünauer <marcel@cpan.org>
+ 2007-2021, Sagar R. Shah <srshah@cpan.org>
+ 2007-2021, Evan Giles <egiles@cpan.org>
+License: GPL-1+ or Artistic
+
+Files: debian/*
+Copyright: 2009, Damyan Ivanov <dmn@debian.org>
+ 2009-2010, Jonathan Yu <jawnsy@cpan.org>
+ 2010, Ryan Niebur <ryan@debian.org>
+ 2011-2012, Nicholas Bamber <nicholas@periapt.co.uk>
+ 2012-2021, gregor herrmann <gregoa@debian.org>
+ 2012, Fabrizio Regalli <fabreg@fabreg.it>
+ 2012, Nathan Handler <nhandler@debian.org>
+ 2015, Lucas Kanashiro <kanashiro.duarte@gmail.com>
+License: GPL-1+ or Artistic
+
+License: GPL-1+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 1, or (at your option)
+ any later version.
+ .
+ On Debian systems, the complete text of version 1 of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-1'.
+
+License: Artistic
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the Artistic License, which comes with Perl.
+ .
+ On Debian systems, the complete text of the Artistic License can be
+ found in `/usr/share/common-licenses/Artistic'.

@@ -1,0 +1,292 @@
+libtest-compile-perl (3.0.1-1) unstable; urgency=medium
+
+  * Import upstream version 3.0.1.
+  * Update (test) dependencies: drop libuniversal-require-perl.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 16 Oct 2021 17:12:18 +0200
+
+libtest-compile-perl (2.4.2-1) unstable; urgency=medium
+
+  * Import upstream version 2.4.2.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Skip another new test during autopkgtests which needs the source tree.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 16 Aug 2021 18:24:08 +0200
+
+libtest-compile-perl (2.4.1-1) unstable; urgency=medium
+
+  * Import upstream version 2.4.1.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Jul 2020 19:09:57 +0200
+
+libtest-compile-perl (2.4.0-1) unstable; urgency=medium
+
+  * Import upstream version 2.4.0.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 02 Apr 2020 17:41:41 +0200
+
+libtest-compile-perl (2.3.1-1) unstable; urgency=medium
+
+  * Import upstream version 2.3.1.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Add libtest-exception-perl to Build-Depends-Indep.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Nov 2019 01:24:33 +0100
+
+libtest-compile-perl (2.2.2-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * Remove Fabrizio Regalli from Uploaders. Thanks for your work!
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * Remove Nathan Handler from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 2.2.2.
+  * Update years of upstream and packaging copyright.
+  * Drop clean_build.patch.
+    The actual cause for the patch (removal of files during clean) is gone,
+    and the rest were cosmetic changes which are not required.
+  * Add a new test to debian/tests/pkg-perl/smoke-skip.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.0.
+  * Drop unneeded version constraint from build dependency.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 15 Jul 2019 16:18:48 -0300
+
+libtest-compile-perl (1.3.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 1.3.0
+  * Bump debhelper compatibility level to 9
+  * Update year of upstream copyright
+  * Add libtest-warnings-perl as build dependency. Used in some tests.
+
+  [ gregor herrmann ]
+  * Rename autopkgtest configuration file.
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Tue, 06 Oct 2015 14:20:47 -0300
+
+libtest-compile-perl (1.2.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Florian Schlichting ]
+  * Add debian/upstream/metadata
+  * Import upstream version 1.2.1
+  * Declare compliance with Debian Policy 3.9.6
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 23 Aug 2015 19:35:10 +0200
+
+libtest-compile-perl (1.2.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update Module::Build dependency.
+
+  [ Niko Tyni ]
+  * Make the package autopkgtestable.
+
+ -- Niko Tyni <ntyni@debian.org>  Sat, 20 Sep 2014 14:27:24 +0300
+
+libtest-compile-perl (1.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 12 Aug 2014 18:36:08 +0200
+
+libtest-compile-perl (1.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 19 Jul 2014 23:57:53 +0200
+
+libtest-compile-perl (1.0.1-1) unstable; urgency=medium
+
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+  * New upstream release.
+  * Refresh clean_build.patch.
+  * Update years of upstream and packaging copyright.
+  * Move Module::Build to Build-Depends.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 06 Apr 2014 19:34:28 +0200
+
+libtest-compile-perl (0.24-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 25 Feb 2013 22:53:38 +0100
+
+libtest-compile-perl (0.23-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * Email change: Nathan Handler -> nhandler@debian.org
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * debian/copyright: update years of copyright.
+  * Set Standards-Version to 3.9.4 (no changes).
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 18 Feb 2013 19:12:33 +0100
+
+libtest-compile-perl (0.21-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * New upstream release
+  * debian/patches/clean_build.patch: Refresh to apply cleanly
+  * debian/control: Add myself to list of Uploaders
+  * debian/copyright: Add myself to debian/* copyright
+  * debian/watch: Remove comments
+
+  [ Nicholas Bamber ]
+  * Reviewed and retained patch updating description
+  * New upstream release (0.21)
+  * Added versioned build dependency on libmodule-build-perl
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Wed, 12 Sep 2012 11:50:43 +0100
+
+libtest-compile-perl (0.17-1) unstable; urgency=low
+
+  * Imported Upstream version 0.17
+  * Bump Standards-Version to 3.9.3
+  * Update format url using copyright-format 1.0
+  * Removed lib.patch patch: it's now included in the source code
+  * Removed taint.patch patch: it's no longer required
+  * Removed man.patch patch
+  * Added Evan Giles to copyright information and updated years
+
+ -- Fabrizio Regalli <fabreg@fabreg.it>  Mon, 27 Feb 2012 17:32:58 +0100
+
+libtest-compile-perl (0.16-1) unstable; urgency=low
+
+  * Imported Upstream version 0.16
+  * Added myself to Uploaders and Copyright
+  * Updated d/copyright to latest DEP5 (.174 revision) format
+  * Updated copyright year
+  * Refreshed taint.patch, lib.patch and man.patch patches
+  * Removed no more necessary debian/source/lintian-overrides file
+
+ -- Fabrizio Regalli <fabreg@fabreg.it>  Mon, 20 Feb 2012 23:55:04 +0100
+
+libtest-compile-perl (0.15-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/copyright: update upstream and packaging copyright years,
+    remove information about removed third-party files.
+  * Remove build dependency on liburi-perl.
+
+  [ Nicholas Bamber ]
+  * New upstream release.
+  * Rebuilt patches as upstream code has changed substantially
+  * Added patches to explain Debian changes in the man page and to keep
+    the package building cleanly.
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 19 Feb 2012 12:05:42 +0000
+
+libtest-compile-perl (0.13-2) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Nicholas Bamber ]
+  * Raised debhelper and compat level to 8
+  * Simplified dependencies
+  * Raised standards version to 3.9.2
+  * Reconsidered short description
+  * Created debian/source/format
+  * Added myself to Uploaders
+  * Refreshed copyright and added myself
+  * Added lintian override about DEP-5
+  * Added patch creating test for taint mode scripts
+    and respecting taint mode (Closes: #649301)
+  * Added patch creating test and fix for scripts using libraries
+    from the same distribution (Closes: #649332)
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 20 Nov 2011 01:31:08 +0000
+
+libtest-compile-perl (0.13-1) unstable; urgency=low
+
+  * New upstream release
+  * Requires Test::More 0.88 for done_testing and no_plan
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Wed, 03 Mar 2010 11:35:53 -0500
+
+libtest-compile-perl (0.12-1) unstable; urgency=low
+
+  * New upstream release
+  * Standards-Version 3.8.4 (no changes)
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Thu, 11 Feb 2010 22:24:00 -0500
+
+libtest-compile-perl (0.11-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * debian/copyright: add info about new file.
+
+  [ Ryan Niebur ]
+  * Add myself to Uploaders
+
+ -- Ryan Niebur <ryan@debian.org>  Wed, 06 Jan 2010 21:02:25 -0800
+
+libtest-compile-perl (0.10-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Add myself to Copyright and Uploaders
+  * Rewrote control description
+  * Update to new debhelper 7 rules format
+  * Update debhelper dependencies
+  * Standards-Version 3.8.3 (no changes)
+  * Implement suggestions from gregoa:
+    + Module::Auto::Install requires debhelper >= 7.1.23
+    + Remove unneeded build-deps (they are now in xt/)
+    + Author tests are in xt/, so AUTOMATED_TESTING does us no good
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Thu, 15 Oct 2009 18:29:35 -0400
+
+libtest-compile-perl (0.08-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #511384)
+
+ -- Damyan Ivanov <dmn@debian.org>  Mon, 12 Jan 2009 11:00:01 +0200

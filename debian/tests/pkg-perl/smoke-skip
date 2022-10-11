@@ -1,0 +1,8 @@
+# looks for the source module
+t/100-internal-all-pm-files.t
+# sets @INC to blib/lib 
+t/100-internal-mess-with-lib.t
+# needs source tree
+t/100-internal-basic.t
+# needs lib/
+t/200-all-files-ok.t

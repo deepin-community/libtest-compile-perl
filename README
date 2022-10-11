@@ -1,0 +1,25 @@
+DESCRIPTION
+    Test::Compile is a Perl module that lets you check whether Perl modules
+    or scripts compile properly, and report its results in standard
+    Test::Simple fashion. It can test all Perl files in a distribution, or
+    individual files.
+
+DEPENDENCIES
+    Requires perl v5.10.0, plus
+    * version
+    * parent
+    * Exporter
+
+INSTALLATION
+    Standard process for building & installing modules:
+
+      perl Build.PL
+      ./Build
+      ./Build test
+      ./Build install
+
+COPYRIGHT AND LICENSE
+    Copyright 2007-2021.
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
